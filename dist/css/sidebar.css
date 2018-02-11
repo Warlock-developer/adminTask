@@ -1,0 +1,95 @@
+.sidebar {
+    background-color: #222d32;
+}
+
+.sidebar .user-panel {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.user-panel {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.user-panel>.image>img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.user-panel>.info {
+    color: #fff;
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+    position: absolute;
+    left: 55px;
+}
+
+.user-panel>.info>p {
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.main-sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    min-height: 100%;
+    width: 230px;
+    z-index: 810;
+    -webkit-transition: -webkit-transform .3s ease-in-out,width .3s ease-in-out;
+    -moz-transition: -moz-transform .3s ease-in-out,width .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out,width .3s ease-in-out;
+    transition: transform .3s ease-in-out,width .3s ease-in-out;
+}
+
+
+.sidebar-menu {
+    white-space: nowrap;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-menu>li.header {
+    color: #4b646f;
+    background: #1a2226;
+}
+
+.sidebar-menu>li.header {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+
+.sidebar-menu li.header {
+    padding: 10px 25px 10px 15px;
+    font-size: 12px;
+}
+
+.sidebar-menu>li{
+    position: relative;
+    margin: 0;
+}
+
+.sidebar-menu>li.active>a {
+    color: #fff;
+    background: #1e282c;
+    border-left-color: #3c8dbc;
+}
+
+.sidebar-menu>li>a {
+    border-left: 3px solid transparent;
+    position: relative;
+    padding: 12px 5px 12px 15px;
+    display: block;
+}
+

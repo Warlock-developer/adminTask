@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="adminTareasApp" ng-controller="mainCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de {{ config.aplicativo }}</title>
+
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/header.css">
+    <link rel="stylesheet" href="dist/css/footer.css">
+    <link rel="stylesheet" href="dist/css/sidebar.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--Importaciones de angular-->
+    <script src="angular/lib/angular.min.js"></script>
+    <script src="angular/lib/angular-route.min.js"></script>
+
+    <!--Controladores-->
+    <script src="angular/app.js"></script>
+    <script src="angular/controladores/tareasCtrl.js"></script>
+
+    <!--Servicios-->
+    <script src="angular/servicios/configuracion_service.js"></script>
+    <script src="angular/servicios/tareas_service.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+
+    <header class="header">
+        <a href="" class="logo">
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>{{ config.aplicativo }}</b>{{ config.iniciales }}</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only"><i class="fa fa-bars"></i></span>
+            </a>
+        </nav>
+    </header>
+
+    <aside class="sidebar" ng-include="'template/menu.html'">
+
+    </aside>
+
+    <article class="content" style="min-height: 307px;">
+        <section class="content-header">
+
+            <h1>
+                {{ titulo }}
+                <small>{{ subtitulo }}</small>
+            </h1>
+
+        </section>
+        <section class="contentenido" ng-view>
+
+
+        </section>
+
+    </article>
+
+    <footer class="footer">
+        <div class="pull-right">
+            {{ config.version }}
+        </div>
+        <strong>Copyright &copy; {{ config.anio }}
+            <a href="{{ config.web }}" target="_blank">
+                {{ config.empresa }}</a>.</strong> Derechos reservados.
+    </footer>
+</div>
+
+
+</body>
+</html>
