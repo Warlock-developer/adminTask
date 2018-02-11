@@ -1,0 +1,46 @@
+{
+	"tareas": [
+		{
+			"id": 1,
+			"estado": true,
+			"nombre": "Tarea 1",
+			"descripcion": "Tarea para lograr cambiar algo",
+			"fechalimite": "prueba"
+		},
+		{
+			"id": 2,
+			"estado": false,
+			"nombre": "Tarea 2",
+			"descripcion": "Tarea detalle de prueba",
+			"fechalimite": "prueba 2"
+		},
+		{
+			"id": 3,
+			"estado": true,
+			"nombre": "Tarea 3",
+			"descripcion": "Tarea detalle de prueba",
+			"fechalimite": "prueba 2"
+		},
+		{
+			"id": 4,
+			"estado": false,
+			"nombre": "Tarea 4",
+			"descripcion": "Tarea detalle de prueba",
+			"fechalimite": "prueba 2"
+		},
+		{
+			"id": 5,
+			"estado": true,
+			"nombre": "Tarea 5",
+			"descripcion": "Tarea detalle de prueba",
+			"fechalimite": "prueba 2"
+		},
+		{
+			"id": 6,
+			"estado": false,
+			"nombre": "Tarea 6",
+			"descripcion": "Tarea detalle de prueba",
+			"fechalimite": "prueba 2"
+		}
+	]
+}
